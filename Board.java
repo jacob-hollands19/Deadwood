@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class Board {
     private ArrayList<Card> card;
-    private Piece[][] board;
+    private Piece[] board;
     private int dayCounter;
     private ArrayList<Player> players;
     private int playerTurn;
@@ -49,7 +49,11 @@ public class Board {
         return playerTurn;
     }
 
-    public Piece getPiece(int[] playerPos){
-        return board[playerPos[0]][playerPos[1]];
+    public Piece findPiece(String pieceName){
+        return new Piece();
+    }
+
+    public Piece[] getBoard() {
+        return board;
     }
 }

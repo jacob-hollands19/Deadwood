@@ -5,7 +5,7 @@ public class Player {
     private int credits;
     private int practiceChips;
     private Boolean onCard;
-    private int[] playerPos;
+    private Piece playerPos;
 
     public Player(String name){}
 
@@ -50,10 +50,10 @@ public class Player {
     public Boolean getOnCard() {
         return onCard;
     }
-    public int[] getPlayerPos() {
+    public Piece getPlayerPos() {
         return playerPos;
     }
-    public void setPlayerPos(int[] playerPos) {
+    public void setPlayerPos(Piece playerPos) {
         this.playerPos = playerPos;
     }
 
